@@ -1,0 +1,21 @@
+{
+    "version": "0.2.0",
+    "configurations": [{
+        "name": "Debbug",
+        "type": "chrome",
+        "request": "launch",
+        "url": "http://localhost:3004",
+        "webRoot": "${workspaceRoot}/src",
+        "sourceMaps": true,
+        "sourceMapPathOverrides": {
+            "webpack:///./*": "${workspaceRoot}/*"
+        }
+    },{
+        "type": "chrome",
+        "request": "attach",
+        "name": "Attach to Chrome",
+        "sourceMaps": true,
+        "port": 9222,
+        "webRoot": "${workspaceRoot}/src"
+    }]
+}
